@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<title>NZ Tourism - Adrenaline Activities</title>
+	
+	<link rel="stylesheet" type="text/css"href="css/style.css">
+</head>
+<body>
+	<div id="wrapper"> <!-- div start -->
+		
+		<div id="titlePageContent">
+			<img src="img/logo-two.png" alt="" id="titleLogo">
+			<img src="img/aa-logo.png" alt="" id="titleLogoTwo">
+			<button id="enterButton">start</button>
+		</div>
+
+		<div id="formContent"> 
+
+			<div id="logos">
+				<img src="img/logo.png" alt="">
+				<h1>adrenaline activities</h1>
+			</div>
+
+			<form>
+			<div id="cities">
+				<h2>select city</h2>
+				<select name="cities">
+				  <option value="auckland">Auckland</option>
+				  <option value="wellington">Wellington</option>
+				  <option value="christchurch">Christchurch</option>
+				</select>
+			</div>
+					
+			<div id="activities">
+				<h2>select activity</h2>
+				<label>
+				  <input type="radio" name="activity" value="" />
+				  <img src="img/activity-icons/skydiving.png">
+				</label>
+				<label>
+				  <input type="radio" name="activity" value="" />
+				  <img src="img/activity-icons/water-rafting.png">
+				</label>
+				<label>
+				  <input type="radio" name="activity" value="" />
+				  <img src="img/activity-icons/bungy-jumping.png">
+				</label>			
+			</div>
+
+			<div id="seats">
+				<h2>number of passenger</h2>
+				<label>
+				  <input type="radio" name="seat-options" value="" />
+				  <img src="img/seat-icons/one.png">
+				</label>
+				<label>
+				  <input type="radio" name="seat-options" value="" />
+				  <img src="img/seat-icons/two.png">
+				</label>
+				<label>
+				  <input type="radio" name="seat-options" value="" />
+				  <img src="img/seat-icons/three.png">
+				</label>
+				<label>
+				  <input type="radio" name="seat-options" value="" />
+				  <img src="img/seat-icons/four.png">
+				</label>
+				<label>
+				  <input type="radio" name="seat-options" value="" />
+				  <img src="img/seat-icons/five.png">
+				</label>
+				<label>
+				  <input type="radio" name="seat-options" value="" />
+				  <img src="img/seat-icons/six.png">
+				</label>
+			</div>
+
+			<div id="days">
+				<h2>select days</h2>
+				<button>-</button>
+				<input value="0" id="dayQuantity">
+				<button>+</button>
+			</div>
+
+			<div id="vehicle">
+				<h2>select vehicle</h2>
+				<label>
+				  <input type="radio" name="car-options" value="" />
+				  <img src="img/vehicle-img/motorbike.jpg" id="motorbike">
+				</label>
+				<label>
+				  <input type="radio" name="car-options" value="" />
+				  <img src="img/vehicle-img/small-car.jpg" id="smallCar">
+				</label>
+				<label>
+				  <input type="radio" name="car-options" value="" />
+				  <img src="img/vehicle-img/medium-car.jpg" id="mediumCar">
+				</label>
+				<label>
+				  <input type="radio" name="car-options" value="" />
+				  <img src="img/vehicle-img/large-car.jpg" id="largeCar">
+				</label>
+			</div>
+
+			<!-- <button id="submitButton">done</button> -->
+			</form>
+
+		</div>
+
+		<!-- <div id="info"></div> -->
+
+	</div> <!-- div end -->
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+</html>
