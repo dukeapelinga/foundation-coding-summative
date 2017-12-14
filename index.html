@@ -7,115 +7,268 @@
 	
 	<title>NZ Tourism - Adrenaline Activities</title>
 	
-	<link rel="stylesheet" type="text/css"href="css/style.css">
+	<!-- CSS LINK -->
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+
+	<!-- Latest Bootstrap Compiled and Minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    
+    <!-- Bootstrap Optional Theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Textillate Plugin -->
+    <link rel="stylesheet" href="js/textillate-plugin/animate.css">
 </head>
 <body>
-	<div id="wrapper"> <!-- div start -->
+	<div id="wrapper"> <!-- wrapper div start -->		
 		
+		<!-- ********** wrapper for help interaction *********** -->
+
+		<div id="aboutUsWrapper">
+			<div id="aboutUs">
+				<div id="aboutUsContent">
+					<h1>about us</h1>
+					<p>We help you find a rental vehicle and inform you the best locations to experience different type of adrenaline activites in New Zealand.</p>
+					<h2>steps to plan your trip</h2>
+					<p>1. Select a city currently closest to you.</p>
+					<p>2. Select type of activity.</p>
+					<p>3. Indicate the amount of passenger travelling.</p>
+					<p>4. Specify length for renting the vehicle.</p>
+					<p>5. Choose vehicle.</p>
+					<button id="closeButton">X</button>
+				</div>
+			</div>
+		</div>
+		
+		<!-- ********* wrapper for title page ******** -->
+
 		<div id="titlePageContent">
-			<img src="img/aa-logo.png" alt="" id="titleLogoTwo">
-			<button id="enterButton">start</button>
-			<img src="img/logo.png" alt="" id="titleLogo">
+			<button id="helpButton">?</button>
+			<div  id="titleLogoOne">
+				<img src="img/aa-logo.png" alt="">
+			</div>	
+			<button id="enterButton" type="button" class="btn btn-success">start</button>
+			<div id="titleLogoTwo">
+				<img src="img/logo.png" alt="">
+			</div>
 		</div>
 
 		<div id="formContent"> 
 
+			<!-- ********** wrapper for header title ********* -->
+
 			<div id="logos">
 				<img src="img/logo.png" alt="">
-				<h1>adrenaline activities</h1>
+				<button id="helpButtonTwo">?</button>
+				<h1 id="headerMainTitle">adrenaline activities</h1>
 			</div>
+			
+			<!-- ************* wrapper for city selection *********** -->
 
-			<form>
+			<form name="theForm">
+
 			<div id="locations" class="formBackground">
-				<h2>select city</h2>
-				<select name="cities">
-				  <option value="auckland">Auckland</option>
-				  <option value="wellington">Wellington</option>
-				  <option value="christchurch">Christchurch</option>
-				</select>
+				<h2 class="tlt">select city</h2>
+				<div class="style-select">
+					<select id="locationOptions" name="cities">
+						<option style="display:none">choose a city</option>
+						<option value="Auckland">Auckland</option>
+				  		<option value="Wellington">Wellington</option>
+					  	<option value="Christchurch">Christchurch</option>
+					</select>
+				</div>
 			</div>
-					
+			
+			<!-- *********** wrapper for activity selection *********** -->
+
 			<div id="activities" class="formBackground">
-				<h2>select activity</h2>
+				<h2 class="tlt">select activity</h2>
 				<label>
-				  <input type="radio" name="activity" value="" />
-				  <img src="img/activity-icons/skydiving.png">
+				  <input type="radio" name="activity" value="Skydiving" />
+				  <img src="img/activity-icons/skydiving.png" alt="skydiving">
 				</label>
 				<label>
-				  <input type="radio" name="activity" value="" />
-				  <img src="img/activity-icons/water-rafting.png">
+				  <input type="radio" name="activity" value="Water-Rafting" />
+				  <img src="img/activity-icons/water-rafting.png" alt="water rafting">
 				</label>
 				<label>
-				  <input type="radio" name="activity" value="" />
-				  <img src="img/activity-icons/bungy-jumping.png">
+				  <input type="radio" name="activity" value="Bungy-Jumping" />
+				  <img src="img/activity-icons/bungy-jumping.png" alt="bungy jumping">
 				</label>			
 			</div>
+			
+			<!-- *********** wrapper for seats selection *************** -->
 
 			<div id="seats" class="formBackground">
-				<h2>number of passenger</h2>
+				<h2 class="tlt">number of passenger</h2>
 				<label>
-				  <input type="radio" name="seat-options" value="" />
-				  <img src="img/seat-icons/one.png">
+				  <input type="radio" name="seat-options" value="1" />
+				  <img src="img/seat-icons/one.png" alt="number one">
 				</label>
 				<label>
-				  <input type="radio" name="seat-options" value="" />
-				  <img src="img/seat-icons/two.png">
+				  <input type="radio" name="seat-options" value="2" />
+				  <img src="img/seat-icons/two.png" alt="number two">
 				</label>
 				<label>
-				  <input type="radio" name="seat-options" value="" />
-				  <img src="img/seat-icons/three.png">
+				  <input type="radio" name="seat-options" value="3" />
+				  <img src="img/seat-icons/three.png" alt="number three">
 				</label>
 				<label>
-				  <input type="radio" name="seat-options" value="" />
-				  <img src="img/seat-icons/four.png">
+				  <input type="radio" name="seat-options" value="4" />
+				  <img src="img/seat-icons/four.png" alt="number four">
 				</label>
 				<label>
-				  <input type="radio" name="seat-options" value="" />
-				  <img src="img/seat-icons/five.png">
+				  <input type="radio" name="seat-options" value="5" />
+				  <img src="img/seat-icons/five.png" alt="number five">
 				</label>
 				<label>
-				  <input type="radio" name="seat-options" value="" />
-				  <img src="img/seat-icons/six.png">
+				  <input type="radio" name="seat-options" value="6" />
+				  <img src="img/seat-icons/six.png" alt="number six">
 				</label>
 			</div>
+			
+			<!-- ********* wrapper for duration specification ********* -->
 
 			<div id="days" class="formBackground">
-				<h2>select days</h2>
-				<button>-</button>
-				<input value="0" id="dayQuantity">
-				<button>+</button>
+				<div id="selectDayContainer">
+					<h2 class="tlt">rental length in days</h2>
+					<button id="minusDay" type="button" class="btn btn-primary">-</button>
+					<input value="0" id="dayQuantity">
+					<button id="addDay" type="button" class="btn btn-primary">+</button>
+				</div>
+				<div id="notificationContainer"><p id="notification"></p></div>	
 			</div>
 
+			<!-- *********** wrapper for vehicle options ************* -->
+			
 			<div id="vehicles" class="formBackground">
-				<h2>select vehicle</h2>
+				<h2 >select vehicle</h2>
 				<label>
-				  <input type="radio" name="car-options" value="" />
-				  <img src="img/vehicle-img/motorbike.jpg" id="motorbike">
+				  <input type="radio" name="car-options" value="Motorbike" />
+				  <img src="img/vehicleImages/motorbike.jpg" id="motorbike" class="available-vehicle" alt="motorbike">
 				</label>
 				<label>
-				  <input type="radio" name="car-options" value="" />
-				  <img src="img/vehicle-img/small-car.jpg" id="smallCar">
+				  <input type="radio" name="car-options" value="Small-Car" />
+				  <img src="img/vehicleImages/smallCar.jpg" id="smallCar" class="available-vehicle" alt="small car">
 				</label>
 				<label>
-				  <input type="radio" name="car-options" value="" />
-				  <img src="img/vehicle-img/medium-car.jpg" id="mediumCar">
+				  <input type="radio" name="car-options" value="Medium-Car" />
+				  <img src="img/vehicleImages/mediumCar.jpg" id="mediumCar" class="available-vehicle" alt="medium car">
 				</label>
 				<label>
-				  <input type="radio" name="car-options" value="" />
-				  <img src="img/vehicle-img/large-car.jpg" id="largeCar">
+				  <input type="radio" name="car-options" value="Large-Car" />
+				  <img src="img/vehicleImages/largeCar.jpg" id="largeCar" class="available-vehicle" alt="large car">
 				</label>
+				<p id="errorMessage">Due to the number of passengers and duration of the trip you have chosen there are no available vehicles available. To continue please change your selections.</p>
 			</div>
 
-			<!-- <button id="submitButton">done</button> -->
+			<!-- ******* wrapper for proceed to vehicle button ******** -->
+
+			<div id="proceedButtonContainer">
+				<button id="proceedButton" type="button" class="btn btn-success">check available vehicle</button>
+			</div>
 			</form>
 
 		</div>
+		
+		<!-- *********** Error Modal *********** -->
 
-		<!-- <div id="info"></div> -->
+		<div id="errorModal">
+			<div id="errorModalContent">
+				<h1>incomplete form</h1>
+				<button id="errorModalCloseButton">X</button>
+			</div>
+		</div>
+		
+		<!-- ******* wrapper for overview page ********* -->
+		
+		<div id="formOverviewWrapper">
+			<div id="overviewContainer">
+				<div id="mainTitle"><h1>overview</h1></div>
+				<div id="vehicleImagesWrapper">
+					<img id="vehicleImage" src="img/vehicleImages/motorbike.jpg" alt="">
+				</div>
+				<div id="overviewContent">
+					<div id="headingTitles">
+						<h2>Activity:</h2>
+						<h2>Destination:</h2>
+						<h2>Distance:</h2>
+						<h2>Vehicle:</h2>
+						<h2>Rental Length:</h2>
+						<h2>Rental Price:</h2>
+						<h2>Estimate Fuel Cost:</h2>
+						<h2>Estimate Total Cost:</h2>
+					</div>
+					<div id="valueContent">
+						<h3 id="activityNameValue"></h3>
+						<h3 id="destinationNameValue"></h3>
+						<h3 id="distanceNameValue"></h3>
+						<h3 id="vehicleNameValue"></h3>
+						<h3 id="rentalLengthValue"></h3>
+						<h3 id="rentalPriceValue"></h3>
+						<h3 id="estimateFuelCost"></h3>
+						<h3 id="estimateTotalCost"></h3>
+					</div>
+				</div>
+				<div id="overviewButtons">
+					<button id="restartButton" class="btn btn-primary">new trip</button>
+					<button id="overviewCloseButton" class="btn btn-danger">close</button>
+				</div>
+				<div id="rentalInfo">
+					<div class="title"><h1>Rental Info</h1></div>
+					<div class="logo"><img id="jucyLogo" src="img/jucy-logo.png" alt=""></div>
+					<div class="informationContainer">
+						<h1>JUCY Rentals</h1>
+						<p>For more info please either contact or visit this car rental service's website.</p>
+					</div>
+					<div class="contactInfoContainer">
+						<div class="contactTitle">
+							<h2>Phone:</h2>
+							<h2>Website:</h2>
+						</div>
+						<div class="contactContent">
+							<h3>0800 399 736</h3>
+							<h3><a href="https://www.jucy.co.nz/">www.jucy.co.nz</a></h3>
+						</div>
+					</div>
+				</div>
+				<div id="activityInfo">
+					<div class="title"><h1>Activity Info</h1></div>
+					<div class="logo"><img id="activityLogo" src="img/activity-logo.png" alt=""></div>
+					<div class="informationContainer">
+						<h1>NZ Tourism Guide</h1>
+						<p>For more info please either contact or visit this activity guide planner's website.</p>
+					</div>
+					<div class="contactInfoContainer">
+						<div class="contactTitle">
+							<h2>Phone:</h2>
+							<h2>Website:</h2>
+						</div>
+						<div class="contactContent">
+							<h3>0800 146 546</h3>
+							<h3><a href="http://www.tourism.net.nz/">www.tourism.net.nz/</a></h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-	</div> <!-- div end -->
+	</div> <!-- wrapper div end -->
 	
+	<!-- jQuery CDN -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Textillate.js Plugin -->
+    <script src="js/textillate-plugin/jquery.lettering.js"></script>
+    <script src="js/textillate-plugin/jquery.textillate.js"></script>
+
+	<!-- Latest Bootstrap Compiled and Minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="js/object.js"></script>
 	<script src="js/custom.js"></script>
+	<script src="js/interaction-plugin.js"></script>
 </body>
 </html>

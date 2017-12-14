@@ -1,119 +1,31 @@
-@import url("https://fonts.googleapis.com/css?family=Bangers");
-@import url("https://fonts.googleapis.com/css?family=Questrial");
-* {
-  margin: 0 auto;
-  padding: 0; }
+/*
+Error: Invalid CSS after "	}": expected selector or at-rule, was "}"
+        on line 563 of /Users/porkbunn/Desktop/foundation-coding-summative/sass/style.scss
 
-#wrapper {
-  position: relative; }
-  #wrapper #titlePageContent {
-    width: 768px;
-    height: 1024px;
-    background-color: #001934;
-    text-align: center;
-    position: absolute;
-    z-index: 2; }
-    #wrapper #titlePageContent #titleLogo {
-      width: 80px;
-      height: 80px;
-      padding: 100px 100px 0px 100px; }
-    #wrapper #titlePageContent #titleLogoTwo {
-      width: 600px;
-      height: 200px;
-      padding-top: 90px;
-      padding-bottom: 150px; }
-    #wrapper #titlePageContent button {
-      width: 500px;
-      height: 75px;
-      margin: 0px 50px 0px 50px; }
-  #wrapper #formContent {
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
-    background-color: #001934;
-    width: 768px;
-    height: 1024px;
-    overflow: scroll;
-    position: absolute; }
-    #wrapper #formContent ::-webkit-scrollbar {
-      width: 0px;
-      /* remove scrollbar space */
-      background: transparent;
-      /* optional: just make scrollbar invisible */ }
-    #wrapper #formContent h2 {
-      color: white;
-      text-transform: uppercase;
-      padding-bottom: 20px;
-      font-family: 'Questrial', sans-serif;
-      letter-spacing: 2px;
-      font-weight: normal; }
-    #wrapper #formContent #logos {
-      height: 80px;
-      width: 768px;
-      background-color: #FFD700;
-      position: fixed;
-      z-index: 1; }
-      #wrapper #formContent #logos h1 {
-        font-size: 4em;
-        font-family: 'Bangers', cursive;
-        color: #000F1E;
-        padding-top: 5px;
-        letter-spacing: 7px; }
-      #wrapper #formContent #logos img {
-        width: 80px;
-        height: 80px;
-        float: left; }
-    #wrapper #formContent #locations {
-      padding-bottom: 50px;
-      width: 768px;
-      padding-top: 150px; }
-    #wrapper #formContent #activities {
-      padding: 50px 0px 50px 0px;
-      width: 768px; }
-      #wrapper #formContent #activities img {
-        width: 500px;
-        height: 100px; }
-      #wrapper #formContent #activities label {
-        width: 200px; }
-    #wrapper #formContent #seats {
-      padding: 50px 0px 50px 0px;
-      width: 768px; }
-      #wrapper #formContent #seats img {
-        height: 75px;
-        width: 75px; }
-    #wrapper #formContent #days {
-      padding: 50px 0px 50px 0px;
-      width: 768px; }
-      #wrapper #formContent #days input {
-        height: 75px;
-        width: 75px;
-        font-family: 'Questrial', sans-serif;
-        text-align: center;
-        font-size: 2em; }
-    #wrapper #formContent #vehicles {
-      padding: 50px 0px 75px 0px;
-      width: 768px; }
-      #wrapper #formContent #vehicles img {
-        width: 150px;
-        height: 95px; }
-      #wrapper #formContent #vehicles #largeCar {
-        display: none; }
-    #wrapper #formContent #locations:hover,
-    #wrapper #formContent #activities:hover,
-    #wrapper #formContent #seats:hover,
-    #wrapper #formContent #days:hover,
-    #wrapper #formContent #vehicles:hover {
-      background-color: rgba(0, 15, 30, 0.5); }
-    #wrapper #formContent label > input {
-      /* HIDE RADIO */
-      visibility: hidden;
-      /* Makes input not-clickable */
-      position: absolute;
-      /* Remove input from document flow */ }
-    #wrapper #formContent label > input + img {
-      /* IMAGE STYLES */
-      cursor: pointer;
-      border: 2px solid transparent; }
-    #wrapper #formContent label > input:checked + img {
-      /* (RADIO CHECKED) IMAGE STYLES */
-      border: 2px solid rgba(255, 215, 0, 0.7); }
+558: 					border-radius: 10px
+559: 				}
+560: 			}	
+561: 		}
+562: 	}
+563: }
+
+Backtrace:
+/Users/porkbunn/Desktop/foundation-coding-summative/sass/style.scss:563
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:42:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `load'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"	}\": expected selector or at-rule, was \"}\"\A         on line 563 of /Users/porkbunn/Desktop/foundation-coding-summative/sass/style.scss\A \A 558: 					border-radius: 10px\A 559: 				}\A 560: 			}	\A 561: 		}\A 562: 	}\A 563: }"; }
